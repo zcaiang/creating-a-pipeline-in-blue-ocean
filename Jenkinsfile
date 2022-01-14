@@ -9,8 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'ls $WORKSPACE'
         sh 'npm install'
-        sh 'echo $WORKSPACE'
       }
     }
 
